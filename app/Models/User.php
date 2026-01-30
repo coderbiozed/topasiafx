@@ -49,8 +49,7 @@ class User extends Authenticatable
     }
 
     // Relation to UserDetail
-    public function detail()
-    {
+    public function detail() {
         return $this->hasOne(UserDetail::class);
     }
 }
